@@ -22,3 +22,4 @@ graph LR
     C --> D[Kafka (agg_price topic)]
     D --> E[ClickHouse (实时存储)]
     E --> F[Grafana (实时可视化)]
+```
