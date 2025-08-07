@@ -17,9 +17,9 @@
 
 ```mermaid
 graph LR
-    A[Binance WebSocket] --> B[Kafka(raw_price topic)]
-    B --> C[FlinkSQL(实时计算)]
-    C --> D[Kafka(agg_price topic)]
-    D --> E[ClickHouse(实时存储)]
-    E --> F[Grafana(实时可视化)]
+    A["Binance WebSocket"] --> B["Kafka: raw_price"]
+    B --> C["Flink SQL 实时计算"]
+    C --> D["Kafka: agg_price"]
+    D --> E["ClickHouse 实时存储"]
+    E --> F["Grafana 可视化"]
 ```
