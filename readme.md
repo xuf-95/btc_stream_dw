@@ -26,9 +26,9 @@ graph LR
 ## Source Table
 
 ```sql
-    window_start DateTime 
-    window_end DateTime
-    symbol String
-    avg_price Float64
-    total_volume Float64
+window_start DateTime // 窗口开始时间
+window_end DateTime // 窗口结束时间
+symbol String // 标志
+avg_price Float64 // 平均价格
+total_volume Float64 // 交易总量
 ```
