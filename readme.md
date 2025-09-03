@@ -23,3 +23,12 @@ graph LR
     D --> E["ClickHouse 实时存储"]
     E --> F["Grafana 可视化"]
 ```
+## Source Table
+
+```sql
+    window_start DateTime 
+    window_end DateTime
+    symbol String
+    avg_price Float64
+    total_volume Float64
+```
